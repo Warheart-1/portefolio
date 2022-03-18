@@ -3,10 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './composents/App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import CV from './composents/CV';
+import MissingPage from './composents/MissingPage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <App />
+        </Route>
+        <Route exact path="/CV">
+          <CV/>
+        </Route>
+        <Route>
+          <MissingPage/>
+        </Route>
+      </Switch>
+    </Router>  
   </React.StrictMode>,
   document.getElementById('root')
 );
