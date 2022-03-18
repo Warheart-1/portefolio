@@ -1,0 +1,18 @@
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 500px;
+  opacity: 0;
+  margin: auto;
+  margin-top: -100px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=Intro.css.map */
