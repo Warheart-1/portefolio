@@ -1,10 +1,11 @@
-import React from 'react';
-import logo from '../logo.svg';
 import '../style/App.css';
 import Banner from "./Banner";
 import Intro from "./Intro";
+<<<<<<< Updated upstream
 import {BrowserRouter as Router} from 'react-router-dom'
 
+=======
+>>>>>>> Stashed changes
 
 function App() {
   return (
