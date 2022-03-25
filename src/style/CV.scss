@@ -1,0 +1,35 @@
+@import"_method.scss";
+@import"_variable.scss";
+
+#contents{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.Progress-bar{
+    width: 90%;
+    height: 50px;
+    position: relative;
+    background-color: #f5f5f5;
+    margin: 20px auto;
+}
+
+#HTML{
+    @include setAnimation($sizeHeight, 1s, #4c20c7,HTML);
+}
+
+#CSS{
+    @include setAnimation($sizeHeight, 1s, #30bd37,CSS);
+}
+
+#JS{
+    @include setAnimation($sizeHeight, 1s, #b14e4e,JS);
+}
+@include AnimationHTML(10px, 100%);
+
+@include AnimationCSS(10px, 80%);

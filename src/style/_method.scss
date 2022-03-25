@@ -1,0 +1,31 @@
+
+
+@mixin AnimationHTML($start, $end){
+    @keyframes Animation {
+        0% {
+            width: $start;
+        }
+        100% {
+           width: $end;
+        }
+    } 
+}
+
+@mixin AnimationCSS($start, $end){
+    @keyframes Animation {
+        0% {
+            width: $start;
+        }
+        100% {
+           width: $end;
+        }
+    } 
+}
+
+@mixin setAnimation($size, $time, $color, $name){
+    height: $size;
+    animation: Animation$name $time ease-in-out;
+    animation-fill-mode: forwards;
+    position: absolute;
+    background-color: $color;
+}
