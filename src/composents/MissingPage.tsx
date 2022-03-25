@@ -1,6 +1,6 @@
 import "../style/Error.css"
 
-function MissingPage(){
+function MissingPage(): JSX.Element {
     return(
         <>
             <div className="Error">

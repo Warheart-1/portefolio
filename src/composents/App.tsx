@@ -2,7 +2,7 @@ import '../style/App.css';
 import Banner from "./Banner";
 import Intro from "./Intro";
 
-function App() {
+function App(): JSX.Element {
   return (
     <div className="App">
       <Banner/>

@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 import {gsap} from 'gsap'
 import "../style/Intro.css"
 
-function Intro (){
+function Intro (): JSX.Element {
     const boxRef = useRef<HTMLDivElement>(null)
 
     useEffect(()=>{
