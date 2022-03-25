@@ -1,9 +1,11 @@
 import "../style/CV.css"
+import Banner from "./Banner"
 
 
 function CV (): JSX.Element {
     return (
         <>
+        <Banner/>
             <div id="contents">
                 <div className="Progress-bar">
                     <div id="HTML">
@@ -24,7 +26,7 @@ function CV (): JSX.Element {
                     </div>
                 </div>
                 <div className="Progress-bar">
-                    <div id="TyepScript">
+                    <div id="TS">
                         <span className="TyepScript-title">TypeScript</span>
                         <span className="TyepScript-content">50%</span>
                     </div>

@@ -25,21 +25,34 @@
 
 //inclus le fichier de setAnimation
 #HTML{
-    @include setAnimation($sizeHeight, 1s, #4c20c7);
-    animation: AnimationHTML 1s; 
+    animation: AnimationHTML 1s ease-in-out;
+    @include setAnimation($sizeHeight,#4c20c7);
 }
 
 #CSS{
-    @include setAnimation($sizeHeight, 1s, #30bd37);
-    animation: AnimationCSS 1s;
+    animation: AnimationCSS 1s ease-in-out;
+    @include setAnimation($sizeHeight,#30bd37);
 }
 
 #JS{
-    @include setAnimation($sizeHeight, 1s, #b14e4e);
-    animation: AnimationJS 1s;
+    animation: AnimationJS 1s ease-in-out;
+    @include setAnimation($sizeHeight,#b14e4e);
 }
 
-//inclus le fichier d'animation
+#TS{
+    animation: AnimationTS 1s ease-in-out;
+    @include setAnimation($sizeHeight,#f7b731);
+}
+
+#jQuery{
+    animation: AnimationTS 1s ease-in-out;
+    @include setAnimation($sizeHeight,#ca19ad);
+}
+
 @include AnimationHTML(10px, 100%);
 
 @include AnimationCSS(10px, 80%);
+
+@include AnimationJS(10px, 60%);
+
+@include AnimationTS(10px, 50%);

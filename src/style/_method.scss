@@ -1,5 +1,3 @@
-
-
 @mixin AnimationHTML($start, $end){
     @keyframes AnimationHTML {
         0% {
@@ -15,17 +13,38 @@
     @keyframes AnimationCSS {
         0% {
             width: $start;
-        }   
+        }
         100% {
            width: $end;
         }
     } 
 }
 
-@mixin setAnimation($size, $time, $color){
+@mixin AnimationJS($start, $end){
+    @keyframes AnimationJS {
+        0% {
+            width: $start;
+        }
+        100% {
+           width: $end;
+        }
+    } 
+}
+
+@mixin AnimationTS($start, $end){
+    @keyframes AnimationTS {
+        0% {
+            width: $start;
+        }
+        100% {
+           width: $end;
+        }
+    } 
+}
+    
+@mixin setAnimation($size, $color){
     height: $size;
+    animation-fill-mode: forwards;
     position: absolute;
     background-color: $color;
-    animation-fill-mode: forwards;
-    animation-duration: $time;
 }
