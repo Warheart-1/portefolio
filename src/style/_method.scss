@@ -1,7 +1,7 @@
 
 
 @mixin AnimationHTML($start, $end){
-    @keyframes Animation {
+    @keyframes AnimationHTML {
         0% {
             width: $start;
         }
@@ -12,20 +12,20 @@
 }
 
 @mixin AnimationCSS($start, $end){
-    @keyframes Animation {
+    @keyframes AnimationCSS {
         0% {
             width: $start;
-        }
+        }   
         100% {
            width: $end;
         }
     } 
 }
 
-@mixin setAnimation($size, $time, $color, $name){
+@mixin setAnimation($size, $time, $color){
     height: $size;
-    animation: Animation$name $time ease-in-out;
-    animation-fill-mode: forwards;
     position: absolute;
     background-color: $color;
+    animation-fill-mode: forwards;
+    animation-duration: $time;
 }

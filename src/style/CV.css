@@ -18,29 +18,32 @@
 
 #HTML {
   height: 50px;
-  animation: Animation HTML 1s ease-in-out;
-  animation-fill-mode: forwards;
   position: absolute;
   background-color: #4c20c7;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation: AnimationHTML 1s;
 }
 
 #CSS {
   height: 50px;
-  animation: Animation CSS 1s ease-in-out;
-  animation-fill-mode: forwards;
   position: absolute;
   background-color: #30bd37;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation: AnimationCSS 1s;
 }
 
 #JS {
   height: 50px;
-  animation: Animation JS 1s ease-in-out;
-  animation-fill-mode: forwards;
   position: absolute;
   background-color: #b14e4e;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation: AnimationJS 1s;
 }
 
-@keyframes Animation {
+@keyframes AnimationHTML {
   0% {
     width: 10px;
   }
@@ -48,7 +51,7 @@
     width: 100%;
   }
 }
-@keyframes Animation {
+@keyframes AnimationCSS {
   0% {
     width: 10px;
   }

@@ -25,15 +25,18 @@
 
 //inclus le fichier de setAnimation
 #HTML{
-    @include setAnimation($sizeHeight, 1s, #4c20c7,HTML);
+    @include setAnimation($sizeHeight, 1s, #4c20c7);
+    animation: AnimationHTML 1s; 
 }
 
 #CSS{
-    @include setAnimation($sizeHeight, 1s, #30bd37,CSS);
+    @include setAnimation($sizeHeight, 1s, #30bd37);
+    animation: AnimationCSS 1s;
 }
 
 #JS{
-    @include setAnimation($sizeHeight, 1s, #b14e4e,JS);
+    @include setAnimation($sizeHeight, 1s, #b14e4e);
+    animation: AnimationJS 1s;
 }
 
 //inclus le fichier d'animation

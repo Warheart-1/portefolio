@@ -1,6 +1,6 @@
 import "../style/Banner.css"
 
-function Banner(){
+function Banner(): JSX.Element {
     return(
         <div className="nav-bar">
             <h1>Porte-Folio</h1>
