@@ -1,6 +1,9 @@
+//import le ficher _method.scss
 @import"_method.scss";
+//import le ficher _variable.scss
 @import"_variable.scss";
 
+//regroupe toutes les divs de la page
 #contents{
     width: 95%;
     height: auto;
@@ -11,6 +14,7 @@
     background-color: #f5f5f5;
 }
 
+//initialise la barre de progression
 .Progress-bar{
     width: 90%;
     height: 50px;
@@ -19,6 +23,7 @@
     margin: 20px auto;
 }
 
+//inclus le fichier de setAnimation
 #HTML{
     @include setAnimation($sizeHeight, 1s, #4c20c7,HTML);
 }
@@ -30,6 +35,8 @@
 #JS{
     @include setAnimation($sizeHeight, 1s, #b14e4e,JS);
 }
+
+//inclus le fichier d'animation
 @include AnimationHTML(10px, 100%);
 
 @include AnimationCSS(10px, 80%);
