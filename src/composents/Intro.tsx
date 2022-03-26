@@ -16,7 +16,9 @@ function Intro (): JSX.Element {
             </div>
         </div>
         <div className="box2">
-            <Link to="/CV">CV</Link>
+            <Link to="/CV"> Mes compétences</Link>
+            <Link to="/Parcours"> Mon parcours</Link>
+            <Link to="/Contact"> Contact</Link>
         </div>
         </>
     )

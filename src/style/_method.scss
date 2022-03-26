@@ -52,12 +52,17 @@
         }
     } 
 }
+
+@mixin Borderradius($radiusSize){
+    border-radius: $radiusSize;
+} 
     
 @mixin setAnimation($size, $color){
     height: $size;
     animation-fill-mode: forwards;
     position: absolute;
     background-color: $color;
+    @include Borderradius(24px);
 }
 
 @mixin BorderProgressionBar($radiusSize, $shadowSize, $color){
