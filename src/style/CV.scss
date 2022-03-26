@@ -92,13 +92,13 @@
 }
 
 //initialise les animations
-@include AnimationHTML(10px, 100%);
+@include AnimationHTML($startingPosition, 100%);
 
-@include AnimationCSS(10px, 80%);
+@include AnimationCSS($startingPosition, 80%);
 
-@include AnimationJS(10px, 60%);
+@include AnimationJS($startingPosition, 60%);
 
-@include AnimationTS(10px, 50%);
+@include AnimationTS($startingPosition, 50%);
 
-@include AnimationReact(10px, 30%);
+@include AnimationReact($startingPosition, 30%);
 
