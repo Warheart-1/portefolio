@@ -49,6 +49,26 @@
     @include setAnimation($sizeHeight,#ca19ad);
 }
 
+#React{
+    animation: AnimationReact 1s ease-in-out;
+    @include setAnimation($sizeHeight,#3e31f7);
+}
+
+#PHP{
+    animation: AnimationJS 1s ease-in-out;
+    @include setAnimation($sizeHeight,#f73e31);
+}
+
+#MySQL{
+    animation: AnimationTS 1s ease-in-out;
+    @include setAnimation($sizeHeight,#f731f7);
+}   
+
+#Git{
+    animation: AnimationTS 1s ease-in-out;
+    @include setAnimation($sizeHeight,#3187f7);
+}
+
 @include AnimationHTML(10px, 100%);
 
 @include AnimationCSS(10px, 80%);
@@ -56,3 +76,6 @@
 @include AnimationJS(10px, 60%);
 
 @include AnimationTS(10px, 50%);
+
+@include AnimationReact(10px, 30%);
+

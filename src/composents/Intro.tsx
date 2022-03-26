@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react"
 import {gsap} from 'gsap'
 import "../style/Intro.css"
+import { Link } from "react-router-dom"
 
 function Intro (): JSX.Element {
     const boxRef = useRef<HTMLDivElement>(null)
@@ -34,6 +35,7 @@ function Intro (): JSX.Element {
             </div>
         </div>
         <div className="box2">
+            <Link to="/CV">Mes compétences</Link>
         </div>
         </>
     )

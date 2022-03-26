@@ -56,6 +56,38 @@
   background-color: #ca19ad;
 }
 
+#React {
+  animation: AnimationReact 1s ease-in-out;
+  height: 50px;
+  animation-fill-mode: forwards;
+  position: absolute;
+  background-color: #3e31f7;
+}
+
+#PHP {
+  animation: AnimationJS 1s ease-in-out;
+  height: 50px;
+  animation-fill-mode: forwards;
+  position: absolute;
+  background-color: #f73e31;
+}
+
+#MySQL {
+  animation: AnimationTS 1s ease-in-out;
+  height: 50px;
+  animation-fill-mode: forwards;
+  position: absolute;
+  background-color: #f731f7;
+}
+
+#Git {
+  animation: AnimationTS 1s ease-in-out;
+  height: 50px;
+  animation-fill-mode: forwards;
+  position: absolute;
+  background-color: #3187f7;
+}
+
 @keyframes AnimationHTML {
   0% {
     width: 10px;
@@ -86,6 +118,14 @@
   }
   100% {
     width: 50%;
+  }
+}
+@keyframes AnimationReact {
+  0% {
+    width: 10px;
+  }
+  100% {
+    width: 30%;
   }
 }
 

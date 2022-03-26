@@ -41,6 +41,17 @@
         }
     } 
 }
+
+@mixin AnimationReact($start, $end){
+    @keyframes AnimationReact {
+        0% {
+            width: $start;
+        }
+        100% {
+           width: $end;
+        }
+    } 
+}
     
 @mixin setAnimation($size, $color){
     height: $size;
