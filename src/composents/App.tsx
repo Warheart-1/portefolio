@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../style/App.css';
 import Banner from "./Banner";
 import Intro from "./Intro";

@@ -14,7 +14,7 @@ ReactDOM.render(
         <Route exact path="/">
           <App />
         </Route>
-        <Route exact path="/CV">
+        <Route path="/CV">
           <CV/>
         </Route>
         <Route>

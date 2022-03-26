@@ -65,3 +65,16 @@
     box-shadow: $shadowSize;
     background-color: $color;   
 }
+
+@mixin AnimationIntro($start, $end){
+    @keyframes AnimationIntro {
+        0% {
+            opacity: 0;
+            margin-top: $start;
+        }
+        100% {
+            opacity: 1;
+            margin-top: $end;
+        }
+    } 
+}
