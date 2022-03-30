@@ -7,6 +7,10 @@
   background: #282c34;
   position: sticky;
 }
+.nav-bar a {
+  text-decoration: none;
+  text-decoration-color: none;
+}
 
 .logo {
   display: flex;

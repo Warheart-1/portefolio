@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom"
 import "../style/Banner.css"
 
 function Banner(): JSX.Element {
     return(
         <div className="nav-bar">
-            <h1>Porte-Folio</h1>
+            <Link to="/"><h1>Porte-Folio</h1></Link>
             <div className="search-bar">
                 <input type="text" placeholder="Rechercher.."/>
             </div>
