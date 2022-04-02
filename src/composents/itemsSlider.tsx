@@ -13,7 +13,7 @@ interface ISlider {
 const SwitchSlider =  styled.div<ISlider>`
     flex: 0 0 auto;
     opacity: ${props => (props.active ? 1 : 0)};
-    transition: opacity 0.5s ease-in-out;
+    transition: all 0.5s ease;
     width: 100%;
     `
 interface ISliderProps {
