@@ -1,7 +1,9 @@
-import "../style/"
+import "../style/CVAudiolVisuel.css"
 
-function CVAudiolVisuel (){
-
+function CVAudiolVisuel(): JSX.Element{
+    return( <>
+        
+    </>)
 }
 
 export default CVAudiolVisuel
