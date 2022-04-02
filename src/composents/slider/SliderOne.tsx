@@ -1,9 +1,10 @@
-import react from "react"
 import styled from "styled-components"
 
 const SliderContainer = styled.div`
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     `
 
 const SliderTextWapper = styled.div`
@@ -17,13 +18,9 @@ function SlideOne():JSX.Element{
         <SliderContainer>
             <SliderTextWapper>
                 <h1>
-                    Projet 1
+                    Projet Eltheria
                 </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec euismod, nisl eget consectetur tempor, nisl nunc
-                    aliquet nunc, eget tincidunt nisl nunc eget nisl.
-                </p>
+                <img src="https://cdn.discordapp.com/attachments/538463475765215306/959851259937050714/Screenshot_2022-04-02_175309.png" alt="projet Eltheria"></img>
             </SliderTextWapper>
         </SliderContainer>
     )

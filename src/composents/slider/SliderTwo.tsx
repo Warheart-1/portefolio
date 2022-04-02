@@ -1,9 +1,9 @@
-import react from "react"
 import styled from "styled-components"
 
 const SliderContainer = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
     `
 
 const SliderTextWapper = styled.div`
@@ -12,6 +12,7 @@ const SliderTextWapper = styled.div`
     justify-content: center;
     margin : 0px 10px;
     `
+    
 function SlideTwo():JSX.Element{
     return(
         <SliderContainer>
