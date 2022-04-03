@@ -1,0 +1,119 @@
+#contents {
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-top: 50px;
+}
+
+.Progress-bar {
+  width: 90%;
+  height: 50px;
+  position: relative;
+  background-color: #797373;
+  margin: 20px auto;
+  border-radius: 24px;
+}
+
+#Premier {
+  animation: AnimationCSS 1s ease-in-out;
+  height: 50px;
+  animation-fill-mode: forwards;
+  position: absolute;
+  background-color: #8420c7;
+  border-radius: 24px;
+}
+
+#After-Effect {
+  animation: AnimationJS 1s ease-in-out;
+  height: 50px;
+  animation-fill-mode: forwards;
+  position: absolute;
+  background-color: #1c0f6b7c;
+  border-radius: 24px;
+}
+
+#Photoshop {
+  animation: AnimationCSS 1s ease-in-out;
+  height: 50px;
+  animation-fill-mode: forwards;
+  position: absolute;
+  background-color: #0b3cdfe3;
+  border-radius: 24px;
+}
+
+#InDesign {
+  animation: AnimationTS 1s ease-in-out;
+  height: 50px;
+  animation-fill-mode: forwards;
+  position: absolute;
+  background-color: #df0bdfe3;
+  border-radius: 24px;
+}
+
+#Illustrator {
+  animation: AnimationIllustrator 1s ease-in-out;
+  height: 50px;
+  animation-fill-mode: forwards;
+  position: absolute;
+  background-color: #df830be3;
+  border-radius: 24px;
+}
+
+.content {
+  z-index: 3;
+  padding-top: 15px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.title {
+  z-index: 3;
+  padding-top: 2px;
+  position: relative;
+}
+
+.content, .title {
+  margin-left: 15px;
+  margin-bottom: 8px;
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+@keyframes AnimationCSS {
+  0% {
+    width: 10px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes AnimationJS {
+  0% {
+    width: 10px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes AnimationTS {
+  0% {
+    width: 10px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes AnimationIllustrator {
+  0% {
+    width: 10px;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=CVAudioVisuel.css.map */

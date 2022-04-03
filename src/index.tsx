@@ -5,6 +5,7 @@ import App from './composents/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import CV from './composents/CV';
+import CVAudiolVisuel from './composents/CVAudioVisuel';
 import MissingPage from './composents/MissingPage';
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
         </Route>
         <Route path="/CV">
           <CV/>
+          <CVAudiolVisuel/>
         </Route>
         <Route>
           <MissingPage/>

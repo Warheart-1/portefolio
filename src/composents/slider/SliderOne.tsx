@@ -15,13 +15,22 @@ const SliderTextWapper = styled.div`
     margin : 0px 10px;
     `
 
-const SliderTextTitle = styled.h1`
-    position: absolute;
+const SliderTextTitle = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: auto;
     font-size: 1.5em;
-    font-weight: bold;
-    visibility: hidden;
-    opacity: 0;
+    font-weight: bold;$
+    width: 100%;
+    height: 50px;
+    background-color: #f5f5f5;
+    position: relative;
+    `
+
+const SliderTextParagraph = styled.div`
+    text-align: justify;
+    font-size: 1em;
     `
 
 const SliderImg = styled.div`
@@ -32,14 +41,10 @@ const SliderImg = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     transition: filter 0.5s ease-in-out;; 
-    &:hover{
-        filter: blur(5px);
-        ${SliderTextTitle}{
-            visibility: visible;
-            opacity: 1;
-        }
     }        
     `
+
+
 
 
 
@@ -47,12 +52,18 @@ function SlideOne():JSX.Element{
     return(
         <SliderContainer>
             <SliderTextWapper>
-                <SliderTextTitle>
-                    Slider One
-                </SliderTextTitle>
-                <SliderImg>
-                    
-                </SliderImg>
+                    <SliderImg>
+                    <SliderTextTitle>
+                        <h1>
+                            Projet
+                        </h1>
+                    </SliderTextTitle>
+                        <SliderTextParagraph>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam euismod, nisi vel tincidunt congue, nisl nisl
+                            aliquet nunc, eget egestas nisl nisl eu nisi.
+                        </SliderTextParagraph>
+                    </SliderImg>
             </SliderTextWapper>
         </SliderContainer>
     )

@@ -53,6 +53,17 @@
     } 
 }
 
+@mixin AnimationIllustrator($start, $end){
+    @keyframes AnimationIllustrator {
+        0% {
+            width: $start;
+        }
+        100% {
+           width: $end;
+        }
+    } 
+}
+
 @mixin Borderradius($radiusSize){
     border-radius: $radiusSize;
 } 
