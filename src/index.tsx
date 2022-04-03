@@ -23,6 +23,14 @@ ReactDOM.render(
         <Route path="/Parcours">
           <Parcours/>
         </Route>
+        <Route path="/privacy-policy" component={() => {
+        window.location.replace('https://ecole-ipssi.com/');
+        return null}}>
+        </Route>
+        <Route path="/privacy-policy2" component={() => {
+        window.location.replace('https://eltheria.000webhostapp.com/index.html');
+        return null}}>
+        </Route>
         <Route>
           <MissingPage/>
         </Route>
