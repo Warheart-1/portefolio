@@ -140,13 +140,12 @@ function Parcours() : JSX.Element{
                     <TimelineItem>
                         <TimelineImg/>
                         <div className="timeline-content js--fadeInLeft">
-                            <h1>Test</h1>
-                            <TimelineDate>2 MAI 2020</TimelineDate>
+                            <h1>Bachelor Dév. FullStack</h1>
+                            <TimelineDate>Octobre 2022</TimelineDate>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, illo voluptas iusto maxime magni dicta hic, aut delectus minima harum eligendi molestiae vero itaque, deserunt quos ad labore minus porro.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum saepe expedita! Rerum repudiandae voluptas reiciendis sed labore rem, nostrum nam dolorum pariatur ullam libero mollitia ipsa architecto, quae tenetur.
+                                <strong>École IPSSI, MARNE-LA-VALLÉE</strong>
                             </p>
-                            <ProjectLink to="/">Voir le projet</ProjectLink>
+                            <ProjectLink to="/privacy-policy">Voir le projet</ProjectLink>
                         </div>
                     </TimelineItem>
                 </div>
@@ -155,18 +154,49 @@ function Parcours() : JSX.Element{
                         <TimelineImg/>
                         <div className="timeline-content js--fadeInRight">
                             <TimelineImgHeader>
-                                <h1>Test 2</h1>
+                                <h1>Projet Eltheria</h1>
                             </TimelineImgHeader>
-                            <TimelineDate id="toTheRight">2 MAI 2021</TimelineDate>
+                            <TimelineDate id="toTheRight">Juillet 2021 - Avril 2022</TimelineDate>
                             <p> 
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, illo voluptas iusto maxime magni dicta hic, aut delectus minima harum eligendi molestiae vero itaque, deserunt quos ad labore minus porro.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem earum saepe expedita! Rerum repudiandae voluptas reiciendis sed labore rem, nostrum nam dolorum pariatur ullam libero mollitia ipsa architecto, quae tenetur.
+                                <strong>Développement d'un jeu en réalitée augmentée</strong><br/>
+                                <br/>
+                                <br/>
+                                Fait sous Unity.
+                                <br/>
+                                <br/>
+                                En C# (avec le framework Unity).
+                                <br/>
+                                <br/>
+                                Projet de fin d'étude.
                             </p>
-                            <ProjectLink to="/">Voir le projet</ProjectLink>
+                            <ProjectLink to="/privacy-policy2">Voir le projet</ProjectLink>
                         </div>
                     </TimelineItem>
+                    <div className="container">
+                        <TimelineItem>
+                            <TimelineImg/>
+                            <div className="timeline-content js--fadeInLeft">
+                                <br/>
+                                <h1>DUT MMI (Métiers du Multimédia et de l'Internet)</h1>
+                                <TimelineDate>Septembre 2020 - Avril 2022</TimelineDate>
+                                <p>
+                                    <strong>UNIVERSITÉ GUSTASVE EIFFEL,IUT DE MARNE-LA-VALLÉE, ANTENNE DE MEAUX</strong>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    Apprentissage des langages du web et du développement mobile.
+                                    <br/>
+                                    <br/>
+                                    Sécurité réseau sous Debian.
+                                    <br/>
+                                    <br/>
+                                    Mise en situation de projet de groupe.
+                                </p>
+                                <ProjectLink to="/privacy-policy3">Voir le projet</ProjectLink>
+                            </div>
+                        </TimelineItem>
+                    </div>    
                 </div>
-
             </Timeline>
         </>
     )
