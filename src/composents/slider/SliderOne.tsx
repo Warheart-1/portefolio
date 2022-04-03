@@ -16,10 +16,12 @@ const SliderTextWapper = styled.div`
     `
 
 const SliderTextTitle = styled.h1`
-    text-align: center;
-    font-size: 50px;
+    position: absolute;
+    margin: auto;
+    font-size: 1.5em;
     font-weight: bold;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     `
 
 const SliderImg = styled.div`
@@ -29,12 +31,13 @@ const SliderImg = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: opacity 0.4s ease-in-out; 
+    transition: filter 0.5s ease-in-out;; 
     &:hover{
+        filter: blur(5px);
         ${SliderTextTitle}{
-            display: block;
+            visibility: visible;
+            opacity: 1;
         }
-        opacity: 0.5; 
     }        
     `
 
@@ -44,10 +47,11 @@ function SlideOne():JSX.Element{
     return(
         <SliderContainer>
             <SliderTextWapper>
+                <SliderTextTitle>
+                    Slider One
+                </SliderTextTitle>
                 <SliderImg>
-                    <SliderTextTitle>
-                        Projet 1
-                    </SliderTextTitle>
+                    
                 </SliderImg>
             </SliderTextWapper>
         </SliderContainer>
