@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import CV from './composents/CV';
 import CVAudiolVisuel from './composents/CVAudioVisuel';
 import MissingPage from './composents/MissingPage';
+import Parcours from './composents/Parcours';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,6 +19,9 @@ ReactDOM.render(
         <Route path="/CV">
           <CV/>
           <CVAudiolVisuel/>
+        </Route>
+        <Route path="/Parcours">
+          <Parcours/>
         </Route>
         <Route>
           <MissingPage/>

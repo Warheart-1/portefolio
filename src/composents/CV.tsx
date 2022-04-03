@@ -40,7 +40,7 @@ function CV (): JSX.Element {
                 <div className="Progress-bar">
                     <div id="React">
                         <span className="title">React</span>
-                        <span className="content">30%</span>
+                        <span className="content">40%</span>
                     </div>
                 </div>
                 <div className="Progress-bar">

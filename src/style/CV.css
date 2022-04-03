@@ -90,7 +90,7 @@
 }
 
 #Git {
-  animation: AnimationTS 1s ease-in-out;
+  animation: AnimationJS 1s ease-in-out;
   height: 50px;
   animation-fill-mode: forwards;
   position: absolute;
@@ -155,7 +155,7 @@
     width: 10px;
   }
   100% {
-    width: 30%;
+    width: 40%;
   }
 }
 

@@ -1,0 +1,44 @@
+//import le ficher _method.scss
+@import"_method.scss";
+//import le ficher _variable.scss
+@import"_variable.scss";
+
+.timeline-card{
+    padding: 0!important;
+
+	p {
+		padding: 0 20px;
+	}
+
+	a {
+		margin-left: 20px;
+	}
+}
+
+.timeline-content {
+	position: relative;
+	width: 45%;
+	padding: 10px 30px;
+	border-radius: 4px;
+	background: #f5f5f5;
+	box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .3);
+
+	&::after {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		width: 0;
+		height: 0;
+		top: 30px;
+		right: -15px;
+		border-width: 10px 0 10px 15px;
+		border-color: transparent transparent transparent #f5f5f5;
+	}
+}
+.js--fadeInRight {
+    transform: scaleX(-1);
+    p, a, div{
+        transform: scaleX(-1);
+    }
+    float: right;
+}
