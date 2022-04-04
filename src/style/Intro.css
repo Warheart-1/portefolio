@@ -21,6 +21,12 @@
   flex-direction: column;
 }
 
+.link-page {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
 @keyframes AnimationIntro {
   from {
     opacity: 0;

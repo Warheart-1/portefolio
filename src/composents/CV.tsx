@@ -1,12 +1,20 @@
 import "../style/CV.css"
 import Banner from "./Banner"
 import Slider from "./Slider"
+import styled from "styled-components"
 
 
 function CV (): JSX.Element {
+    const Title = styled.h1`
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+    `
+
     return (
         <>
         <Banner/>
+            <Title>Compétences en développement web.</Title>
             <div id="contents">
                 <div className="Progress-bar">
                     <div id="HTML">

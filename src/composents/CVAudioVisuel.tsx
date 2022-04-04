@@ -1,9 +1,17 @@
 import "../style/CVAudioVisuel.css"
-import Banner from "./Banner"
+import SliderAudioVisuel from "./SliderAudioVisuel"
+import styled from "styled-components"
 
 function CVAudiolVisuel(): JSX.Element{
+
+    const Title = styled.h1`
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+    `
+
     return( <>
-        
+            <Title>Compétences en motion design.</Title>
             <div id="contents">
                 <div className="Progress-bar">
                     <div id="Premier">
@@ -36,6 +44,7 @@ function CVAudiolVisuel(): JSX.Element{
                     </div>
                 </div>
             </div>
+            <SliderAudioVisuel/>
     </>)
 }
 
