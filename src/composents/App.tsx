@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom';
 import '../style/App.css';
 import Banner from "./Banner";
 import Intro from "./Intro";
-import ItemsSlider from './itemsSlider';
-import SliderOne from './slider/SliderOne';
-import SliderTwo from './slider/SliderTwo';
+import ItemsSlider from './Slider';
 
 
 function App(): JSX.Element {
@@ -12,10 +10,6 @@ function App(): JSX.Element {
     <div className="App">
       <Banner/>
         <Intro/>
-        <ItemsSlider>
-          <SliderOne/>
-          <SliderTwo/>
-        </ItemsSlider>
     </div>
   );
 }

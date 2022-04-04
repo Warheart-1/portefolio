@@ -1,5 +1,6 @@
 import "../style/CV.css"
 import Banner from "./Banner"
+import Slider from "./Slider"
 
 
 function CV (): JSX.Element {
@@ -61,7 +62,8 @@ function CV (): JSX.Element {
                         <span className="content">60%</span>
                     </div>
                 </div>
-            </div>            
+            </div> 
+            <Slider/>         
         </>
     )
 }
