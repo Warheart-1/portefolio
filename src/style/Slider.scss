@@ -3,7 +3,7 @@
 .slider {
     margin: 0 auto;
     overflow: hidden;
-    max-width: 500px;
+    max-width: 700px;
   }
   
   .slideSlider {
@@ -40,5 +40,26 @@
     .slideDot.active {
         background-color: #000;
     }
-
   
+  
+  .slide-content{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0;
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  .title-Project{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }

@@ -32,18 +32,25 @@ function Slider(){
       }, [index]);
 
         return (
+          <>
+            <h1 className="title-Project"> Mes Projets dans le développement.</h1>
             <div className="slider">
               <div
                 className="slideSlider"
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
               >
-                {Colors.map((url, index) => (
+                {projetList.map(({id, name, color , backgrondImage, url}) => (
                     
                   <div
                     className="slide"
-                    key={index}
-                    style={{ backgroundImage: `url(${url})` }}
-                  ></div>
+                    key={id}
+                    style={{ backgroundImage: `url(${backgrondImage})` }}
+                  >
+                    <div className="slide-content">
+                      <h1 style={{color: color}}>{name}</h1>
+                      <a href={url}>Voir projet</a>
+                    </div>
+                  </div>
                 ))}
               </div>
         
@@ -56,7 +63,9 @@ function Slider(){
                 ))}
               </div>
             </div>
-          );
+          </>
+          )
+        
 }
 
 export default Slider;
