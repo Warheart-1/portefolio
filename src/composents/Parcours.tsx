@@ -180,7 +180,7 @@ function Parcours() : JSX.Element{
                                 <h1>DUT MMI (Métiers du Multimédia et de l'Internet)</h1>
                                 <TimelineDate>Septembre 2020 - Avril 2022</TimelineDate>
                                 <p>
-                                    <strong>UNIVERSITÉ GUSTASVE EIFFEL,IUT DE MARNE-LA-VALLÉE, ANTENNE DE MEAUX</strong>
+                                    <strong>Université Gustave Eiffel,IUT de Marne-La-Vallée, ANTENNE DE MEAUX</strong>
                                     <br/>
                                     <br/>
                                     <br/>
@@ -196,6 +196,25 @@ function Parcours() : JSX.Element{
                             </div>
                         </TimelineItem>
                     </div>    
+                </div>
+                <div className="container">
+                    <TimelineItem>
+                        <TimelineImg/>
+                        <div className="timeline-content js--fadeInLeft">
+                            <br/>
+                            <h1>Bac général S - SVT</h1>
+                            <TimelineDate>Septembre 2019 - Juillet 2020</TimelineDate>
+                            <p>
+                                <strong>Lycée Simone Signoret, VAUX-LE-PÉNIL</strong>
+                                <br/>
+                                <br/>
+                                Mention assez bien.
+                                <br/>
+                                <br/>
+                                Spécialité Physique-Chimie.
+                            </p>
+                        </div>
+                    </TimelineItem>
                 </div>
             </Timeline>
         </>
