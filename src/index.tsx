@@ -8,6 +8,8 @@ import CV from './composents/CV';
 import CVAudiolVisuel from './composents/CVAudioVisuel';
 import MissingPage from './composents/MissingPage';
 import Parcours from './composents/Parcours';
+import Contact from './composents/Contact';
+import Footer from './composents/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,9 +21,13 @@ ReactDOM.render(
         <Route path="/CV">
           <CV/>
           <CVAudiolVisuel/>
+          <Footer/>
         </Route>
         <Route path="/Parcours">
           <Parcours/>
+        </Route>
+        <Route path="/Contact">
+          <Contact/>
         </Route>
         <Route path="/privacy-policy" component={() => {
         window.location.replace('https://ecole-ipssi.com/');

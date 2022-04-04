@@ -1,6 +1,7 @@
 import "../style/CVAudioVisuel.css"
 import SliderAudioVisuel from "./SliderAudioVisuel"
 import styled from "styled-components"
+import Footer from "./Footer"
 
 function CVAudiolVisuel(): JSX.Element{
 

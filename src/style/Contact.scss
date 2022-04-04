@@ -1,6 +1,59 @@
 @import "_method.scss";
 @import "_variable.scss";
 
+.containe-Contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
 .LogoGitHub{
-    
+    margin-top: 200px;
+    margin-right: 100px;
+    width: 200px;
+    height: 200px;
+    background-image: url("https://cdn.discordapp.com/attachments/538463475765215306/960621018924347432/25231.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.LogoHotMail{
+    margin-left: 100px;
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    background-image: url("https://cdn.discordapp.com/attachments/538463475765215306/960622452168335370/Outlook-Logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.LogoPhoneNumber{
+    margin-left: 200px;
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    background-image: url("https://cdn.discordapp.com/attachments/538463475765215306/960622990574370836/LinkedIn_logo_initials.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.title-w{
+    margin-left: 100px;
 }
