@@ -94,3 +94,12 @@
         }
     } 
 }
+
+@mixin AnimationToTheLeft($start, $end){
+    from {
+        margin-left: $start;
+    }
+    to{
+        margin-left: $end;
+    }
+}

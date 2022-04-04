@@ -137,7 +137,7 @@ function Parcours() : JSX.Element{
         <Banner/>
             <Timeline>
                 <div className="container">
-                    <TimelineItem>
+                    <TimelineItem className="Left">
                         <TimelineImg/>
                         <div className="timeline-content js--fadeInLeft">
                             <h1>Bachelor Dév. FullStack</h1>
