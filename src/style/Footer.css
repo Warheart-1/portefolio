@@ -7,6 +7,7 @@
   background: #282c34;
   width: 100%;
   bottom: 0;
+  margin-top: 200px;
 }
 .nav-bar-footer a {
   text-decoration: none;
@@ -38,7 +39,6 @@
   text-align: center;
   justify-content: center;
   margin-left: 20px;
-  margin-bottom: 50px;
 }
 .Link-resume a {
   text-decoration: none;
@@ -46,7 +46,7 @@
 }
 
 .link-page {
-  margin-bottom: 20px;
+  padding: 0;
 }
 
 /*# sourceMappingURL=Footer.css.map */
