@@ -145,7 +145,7 @@ function Parcours() : JSX.Element{
                             <p>
                                 <strong>École IPSSI, MARNE-LA-VALLÉE</strong>
                             </p>
-                            <ProjectLink to="/privacy-policy">Voir le projet</ProjectLink>
+                            <ProjectLink to="/privacy-policy">Voir le site de l'école</ProjectLink>
                         </div>
                     </TimelineItem>
                 </div>
@@ -192,7 +192,7 @@ function Parcours() : JSX.Element{
                                     <br/>
                                     Mise en situation de projet de groupe.
                                 </p>
-                                <ProjectLink to="/privacy-policy3">Voir le projet</ProjectLink>
+                                <ProjectLink to="/privacy-policy3">Voir le site de l'Université</ProjectLink>
                             </div>
                         </TimelineItem>
                     </div>    

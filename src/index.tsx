@@ -37,6 +37,10 @@ ReactDOM.render(
         window.location.replace('https://eltheria.000webhostapp.com/index.html');
         return null}}>
         </Route>
+        <Route path="/privacy-policy3" component={() => {
+        window.location.replace('https://www.univ-gustave-eiffel.fr/');
+        return null}}>
+        </Route>
         <Route>
           <MissingPage/>
         </Route>
