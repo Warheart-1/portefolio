@@ -3,21 +3,23 @@
 
 .nav-bar-footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    max-height: 500px;
+    max-height: 100px;
     color: white;
-    background: #282c34;
-    position: fixed;
-    bottom: 0;
-    margin-top: 1000px;
+    background: hsl(220, 13%, 18%);
     width: 100%;
+    bottom: 0;
 
       a{
         text-decoration: none;
         text-decoration-color: none;
       }
     
+  }
+
+  .footer-children{
+    flex-shrink: 0;
   }
   
   .logo{
@@ -38,13 +40,17 @@
   }
 
   .Link-resume{
-    display: flex;
-    flex-direction: row;
+    text-align: center;
     justify-content: center;
-    align-items: center;
     margin-left: 20px;
+    margin-bottom: 50px;
+
     a{
       text-decoration: none;
       color: white;
     }
+  }
+
+  .link-page{
+    margin-bottom: 20px;
   }
