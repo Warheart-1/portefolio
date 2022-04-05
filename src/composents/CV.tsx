@@ -2,6 +2,7 @@ import "../style/CV.css"
 import Banner from "./Banner"
 import Slider from "./Slider"
 import styled from "styled-components"
+import CVAudiolVisuel from "./CVAudioVisuel"
 
 
 function CV (): JSX.Element {
@@ -71,7 +72,8 @@ function CV (): JSX.Element {
                     </div>
                 </div>
             </div> 
-            <Slider/>         
+            <Slider/>  
+            <CVAudiolVisuel/>       
         </>
     )
 }

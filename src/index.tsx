@@ -15,18 +15,19 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route path="/portefolio" exact component={App}>
+        </Route>
+        <Route path="/" exact component={App}>
           <App />
         </Route>
-        <Route path="/CV">
+        <Route path="/CV" exact component={CV}>
           <CV/>
-          <CVAudiolVisuel/>
           <Footer/>
         </Route>
-        <Route path="/Parcours">
+        <Route path="/Parcours" exact component={Parcours}>
           <Parcours/>
         </Route>
-        <Route path="/Contact">
+        <Route path="/Contact" exact component={Contact}>
           <Contact/>
         </Route>
         <Route path="/privacy-policy" component={() => {
