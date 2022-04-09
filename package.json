@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://Warheart-1.github.io/portefolio",
   "dependencies": {
+    "@emailjs/browser": "^3.5.0",
     "@react-three/fiber": "^7.0.26",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",

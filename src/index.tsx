@@ -5,11 +5,11 @@ import App from './composents/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import CV from './composents/CV';
-import CVAudiolVisuel from './composents/CVAudioVisuel';
 import MissingPage from './composents/MissingPage';
 import Parcours from './composents/Parcours';
 import Contact from './composents/Contact';
 import Footer from './composents/Footer';
+import { ContactForm } from './composents/ContactForm';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,8 +27,8 @@ ReactDOM.render(
         <Route path="/Parcours" exact component={Parcours}>
           <Parcours/>
         </Route>
-        <Route path="/Contact" exact component={Contact}>
-          <Contact/>
+        <Route path="/Contact" exact component={ContactForm}>
+          <ContactForm/>
         </Route>
         <Route path="/privacy-policy" component={() => {
         window.location.replace('https://ecole-ipssi.com/');
