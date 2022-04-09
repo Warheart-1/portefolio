@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
-import idEmailJS from '../data/emailJS.ts';
+import idEmailJS from '../data/idEmailJS'; 
 import swal from 'sweetalert2';
 
 export const  ContactForm = () => {
