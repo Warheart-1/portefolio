@@ -2,6 +2,7 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import idEmailJS from '../data/idEmailJS'; 
 import swal from 'sweetalert2';
+import Banner from './Banner';
 
 export const  ContactForm = () => {
     const form = useRef(null);
@@ -33,18 +34,21 @@ export const  ContactForm = () => {
 
     return(
         <>
-        <form ref={form} onSubmit={sendEmail}>
-            <label htmlFor="Name">
-                <input type="text" name='from_name' placeholder='Votre nom.' required></input>
-            </label>
-            <label htmlFor="Email">
-                <input type="email" name='from_adresse' placeholder='Votre adresse mail.' required></input>
-            </label>
-            <label htmlFor="Message">
-                <textarea name='message' placeholder='Votre message.' required></textarea>
-            </label>
-            <button type="submit" value="Send">Envoyé</button>
-        </form>
+            <Banner/>
+            <div className="container-Contact">
+                <form ref={form} onSubmit={sendEmail}>
+                    <label htmlFor="Name">
+                        <input type="text" name='from_name' placeholder='Votre nom.' required></input>
+                    </label>
+                    <label htmlFor="Email">
+                        <input type="email" name='from_adresse' placeholder='Votre adresse mail.' required></input>
+                    </label>
+                    <label htmlFor="Message">
+                        <textarea name='message' placeholder='Votre message.' required></textarea>
+                    </label>
+                    <button type="submit" value="Send">Envoyé</button>
+                </form>
+            </div>
         </>
     )
 }
