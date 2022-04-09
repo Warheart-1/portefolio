@@ -4,6 +4,8 @@ import Banner from "./Banner";
 import Description from './Description';
 import Intro from "./Intro";
 import ItemsSlider from './Slider';
+import gsap from 'gsap';
+
 
 
 function App(): JSX.Element {
