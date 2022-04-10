@@ -1,0 +1,59 @@
+@import "_method.scss";
+@import "_variable.scss";
+
+.container-Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.form-group {
+    position: relative;
+    margin-top: 30px;
+
+    @include AnimationLabel(100%);
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+    padding-right: 20px;
+    margin-top: 30px;
+    &:focus{
+      outline: none;
+    }
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+    &:focus{
+      outline: none;
+    }
+}
+
+button{
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+    &:focus{
+      outline: none;
+    }
+    &:active{
+      background-color: #fff;
+      color: #000;
+      transition: all .3s ease;
+    }
+}

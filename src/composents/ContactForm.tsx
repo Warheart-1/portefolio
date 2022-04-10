@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import idEmailJS from '../data/idEmailJS'; 
 import swal from 'sweetalert2';
 import Banner from './Banner';
+import "../style/ContactForm.css";
 
 export const  ContactForm = () => {
     const form = useRef(null);
@@ -37,15 +38,24 @@ export const  ContactForm = () => {
             <Banner/>
             <div className="container-Contact">
                 <form ref={form} onSubmit={sendEmail}>
-                    <label htmlFor="Name">
-                        <input type="text" name='from_name' placeholder='Votre nom.' required></input>
-                    </label>
-                    <label htmlFor="Email">
-                        <input type="email" name='from_adresse' placeholder='Votre adresse mail.' required></input>
-                    </label>
-                    <label htmlFor="Message">
-                        <textarea name='message' placeholder='Votre message.' required></textarea>
-                    </label>
+                    <div className="form-group">
+                        <input type="text" name='from_name' required></input>
+                        <label htmlFor="Votre Nom">
+                            Nom
+                        </label>
+                        <line></line>
+                    </div>
+                    <div className="form-group">
+                        <input type="email" name='from_adresse' required></input> 
+                        <label htmlFor="Email">
+                            Email
+                        </label>
+                        <line></line>
+                    </div>
+                    <div className="form-group">
+                        <textarea name='message' placeholder='Message...' required></textarea>
+                        <line></line>
+                    </div>
                     <button type="submit" value="Send">Envoyé</button>
                 </form>
             </div>

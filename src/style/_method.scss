@@ -103,3 +103,37 @@
         margin-left: $end;
     }
 }
+
+@mixin AnimationLabel($sizeLine){
+    label{
+        position: absolute;
+        bottom: 6px;
+        left: 0;
+        transition: .3s all ease;
+        font-size: 14px;
+        width: 100%;
+        color: #000000;;
+    }
+
+    input:valid + label, input:focus + label{
+        bottom: 30px;
+        font-size: 10px;
+    }
+    input:focus + label{
+        color: #000;
+    }
+    line:before{
+        content: '';
+        position: absolute;
+        background: #000;
+        width: 0px;
+        height: 2px;
+        right: 50%;
+        bottom: 0;
+    }
+    input:focus ~ line:before{
+        width: $sizeLine;
+        right: 0;
+        transition: all .3s ease;
+      }
+}
